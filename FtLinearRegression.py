@@ -131,19 +131,22 @@ class FtLinearRegression:
 
 
 if __name__ == '__main__':
-    lin_reg = FtLinearRegression()
+    try:
+        lin_reg = FtLinearRegression()
 
-    data = pd.read_csv("data.csv")
+        data = pd.read_csv("data.csv")
 
-    X = np.array(data.iloc[:,0])
-    y = np.array(data.iloc[:,1])
-    lin_reg = FtLinearRegression()
-    lin_reg.fit(X, y)
-    lin_reg.plot()
-    lin_reg.plot_loss()
-    results = lin_reg.save_coef()
-    
-    file = open('results.txt', 'w')
-    file.write(str(results[0]))
-    file.write(',')
-    file.write(str(results[1]))
+        X = np.array(data.iloc[:,0])
+        y = np.array(data.iloc[:,1])
+        lin_reg = FtLinearRegression()
+        lin_reg.fit(X, y)
+        lin_reg.plot()
+        lin_reg.plot_loss()
+        results = lin_reg.save_coef()
+        
+        file = open('results.txt', 'w')
+        file.write(str(results[0]))
+        file.write(',')
+        file.write(str(results[1]))
+    except:
+        print('Something went wrong')
