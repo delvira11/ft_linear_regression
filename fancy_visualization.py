@@ -3,9 +3,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 
-
-
-
 data = pd.read_csv('ds.csv')
 x = data['YearsExperience']
 y = data['Salary']
@@ -32,7 +29,7 @@ def grad_desc(x, y, m, b, n, L, d_m, d_b):
 d_m = 0
 d_b = 0
 L = 0.02
-epochs = 1000
+epochs = 700
 m = 0
 b = 0
 n = len(x)

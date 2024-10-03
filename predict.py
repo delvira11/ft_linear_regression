@@ -1,6 +1,3 @@
-
-
-
 if __name__ == '__main__':
     try:
         file = open('results.txt')
