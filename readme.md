@@ -2,7 +2,9 @@
 
 This project implements simple linear regression from scratch using gradient descent to find the optimum.
 
-![Training gif](animation.gif)
+<p align="center">
+  <img src="animation.gif" alt="Training gif">
+</p>
 
 ## Programs
 
