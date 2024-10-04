@@ -2,6 +2,8 @@
 
 This project implements simple linear regression from scratch using gradient descent to find the optimum.
 
+![](animation.mp4)
+
 ## Programs
 
 1. **Ft_linear_regression.py**: 
